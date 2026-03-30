@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Fullstack Developer Portfolio — building scalable web products with clean UI and robust backend systems."
+    />
+    <title>Akshat Sheth | Fullstack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav-wrap">
+        <a href="#home" class="logo">AS<span class="accent">.</span></a>
+        <button class="menu-btn" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="nav" id="primary-nav">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-left">
+            <h1>Fullstack Developer</h1>
+            <p class="hero-tagline">Crafting reliable products from <span class="accent-text">frontend to backend</span></p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#projects">View My Work</a>
+              <a class="btn btn-secondary" href="#contact">Hire Me</a>
+            </div>
+          </div>
+          <aside class="hero-card">
+            <h2>What I build</h2>
+            <div class="hero-visual" aria-hidden="true">
+              <svg viewBox="0 0 500 340" class="build-illustration" role="img">
+                <defs>
+                  <linearGradient id="glowA" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#6ea8fe" />
+                    <stop offset="100%" stop-color="#8c6bff" />
+                  </linearGradient>
+                </defs>
+                <rect x="30" y="28" width="440" height="284" rx="24" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.12)"/>
+                <rect x="62" y="62" width="200" height="44" rx="10" fill="rgba(110,168,254,0.15)"/>
+                <rect x="282" y="62" width="156" height="44" rx="10" fill="rgba(140,107,255,0.15)"/>
+                <rect x="62" y="125" width="376" height="16" rx="8" fill="rgba(255,255,255,0.15)"/>
+                <rect x="62" y="154" width="320" height="16" rx="8" fill="rgba(255,255,255,0.1)"/>
+                <rect x="62" y="190" width="170" height="95" rx="14" fill="rgba(110,168,254,0.12)" stroke="rgba(110,168,254,0.4)"/>
+                <rect x="252" y="190" width="186" height="44" rx="12" fill="rgba(140,107,255,0.14)" stroke="rgba(140,107,255,0.42)"/>
+                <rect x="252" y="243" width="186" height="42" rx="12" fill="rgba(255,255,255,0.08)"/>
+                <circle cx="449" cy="51" r="7" fill="url(#glowA)"/>
+              </svg>
+              <span class="float-chip chip-ui">UI</span>
+              <span class="float-chip chip-api">API</span>
+              <span class="float-chip chip-cloud">Cloud</span>
+            </div>
+            <p class="hero-visual-caption">From frontend polish to backend architecture, everything fits into one reliable product workflow.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <p class="eyebrow">About</p>
+          <div class="about-layout">
+            <div class="about-visual">
+              <svg viewBox="0 0 400 400" class="about-illustration" role="img" aria-hidden="true">
+                <defs>
+                  <linearGradient id="aboutGradient" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#6ea8fe" />
+                    <stop offset="100%" stop-color="#8c6bff" />
+                  </linearGradient>
+                </defs>
+                
+                <!-- Frontend Layer -->
+                <g class="layer-ui">
+                  <rect x="60" y="20" width="280" height="80" rx="12" fill="rgba(110,168,254,0.1)" stroke="rgba(110,168,254,0.4)" stroke-width="2"/>
+                  <text x="200" y="45" text-anchor="middle" font-size="14" font-weight="600" fill="#6ea8fe">UI &amp; Frontend</text>
+                  <rect x="90" y="55" width="50" height="35" rx="6" fill="rgba(110,168,254,0.2)" stroke="rgba(110,168,254,0.6)" stroke-width="1"/>
+                  <rect x="160" y="55" width="50" height="35" rx="6" fill="rgba(140,107,255,0.2)" stroke="rgba(140,107,255,0.6)" stroke-width="1"/>
+                  <rect x="230" y="55" width="50" height="35" rx="6" fill="rgba(110,168,254,0.2)" stroke="rgba(110,168,254,0.6)" stroke-width="1"/>
+                </g>
+                
+                <!-- Connecting flow -->
+                <line x1="200" y1="100" x2="200" y2="125" stroke="url(#aboutGradient)" stroke-width="2" class="flow-line"/>
+                <polygon points="200,130 195,120 205,120" fill="url(#aboutGradient)" class="flow-arrow"/>
+                
+                <!-- Backend/API Layer -->
+                <g class="layer-api">
+                  <rect x="60" y="135" width="280" height="80" rx="12" fill="rgba(140,107,255,0.1)" stroke="rgba(140,107,255,0.4)" stroke-width="2"/>
+                  <text x="200" y="160" text-anchor="middle" font-size="14" font-weight="600" fill="#8c6bff">API &amp; Backend</text>
+                  <rect x="90" y="175" width="50" height="35" rx="6" fill="rgba(140,107,255,0.2)" stroke="rgba(140,107,255,0.6)" stroke-width="1"/>
+                  <rect x="160" y="175" width="50" height="35" rx="6" fill="rgba(110,168,254,0.2)" stroke="rgba(110,168,254,0.6)" stroke-width="1"/>
+                  <rect x="230" y="175" width="50" height="35" rx="6" fill="rgba(140,107,255,0.2)" stroke="rgba(140,107,255,0.6)" stroke-width="1"/>
+                </g>
+                
+                <!-- Connecting flow -->
+                <line x1="200" y1="215" x2="200" y2="240" stroke="url(#aboutGradient)" stroke-width="2" class="flow-line"/>
+                <polygon points="200,245 195,235 205,235" fill="url(#aboutGradient)" class="flow-arrow"/>
+                
+                <!-- Data &amp; Infrastructure Layer -->
+                <g class="layer-db">
+                  <rect x="60" y="250" width="280" height="80" rx="12" fill="rgba(110,168,254,0.1)" stroke="rgba(110,168,254,0.4)" stroke-width="2"/>
+                  <text x="200" y="275" text-anchor="middle" font-size="14" font-weight="600" fill="#6ea8fe">Data &amp; Infrastructure</text>
+                  <circle cx="115" cy="315" r="12" fill="rgba(110,168,254,0.2)" stroke="rgba(110,168,254,0.6)" stroke-width="1" class="db-node db-1"/>
+                  <circle cx="200" cy="315" r="12" fill="rgba(140,107,255,0.2)" stroke="rgba(140,107,255,0.6)" stroke-width="1" class="db-node db-2"/>
+                  <circle cx="285" cy="315" r="12" fill="rgba(110,168,254,0.2)" stroke="rgba(110,168,254,0.6)" stroke-width="1" class="db-node db-3"/>
+                </g>
+                
+                <!-- Animated floating elements -->
+                <circle cx="30" cy="100" r="3" fill="#6ea8fe" class="float-spark spark-1"/>
+                <circle cx="370" cy="180" r="3" fill="#8c6bff" class="float-spark spark-2"/>
+                <circle cx="40" cy="280" r="2.5" fill="#6ea8fe" class="float-spark spark-3"/>
+              </svg>
+            </div>
+            <div class="about-simple">
+              <h2>I help build the products you're thinking about</h2>
+              <p>
+                I'm a Fullstack developer who works with founders and teams to turn ideas into production-ready products. From API design to UI implementation, I focus on clean code, scalable architecture, and creating tools that users actually want to use.
+              </p>
+              <p>
+                Whether it's building an MVP, shipping new features, or scaling existing systems—I handle the full stack so you can focus on growing your business.
+              </p>
+              <div class="about-stats">
+                <div class="stat">
+                  <div class="stat-number">15+</div>
+                  <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-number">99%</div>
+                  <div class="stat-label">Client Satisfaction</div>
+                </div>
+                <div class="stat">
+                  <div class="stat-number">End-to-End</div>
+                  <div class="stat-label">Frontend to Deployment</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="skills">
+        <div class="container">
+          <p class="eyebrow">Skills</p>
+          <div class="skills-grid">
+            <article class="skill-item"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></article>
+            <article class="skill-item"><i class="devicon-typescript-plain colored"></i><span>TypeScript</span></article>
+            <article class="skill-item"><i class="devicon-react-original colored"></i><span>React</span></article>
+            <article class="skill-item"><i class="devicon-nextjs-line" style="color: #ffffff;"></i><span>Next.js</span></article>
+            <article class="skill-item"><i class="devicon-nodejs-plain colored"></i><span>Node.js</span></article>
+            <article class="skill-item"><i class="devicon-express-original colored"></i><span>Express</span></article>
+            <article class="skill-item"><i class="devicon-python-plain colored"></i><span>Python</span></article>
+            <article class="skill-item"><i class="devicon-postgresql-plain colored"></i><span>PostgreSQL</span></article>
+            <article class="skill-item"><i class="devicon-mongodb-plain colored"></i><span>MongoDB</span></article>
+            <article class="skill-item"><i class="devicon-redis-plain colored"></i><span>Redis</span></article>
+            <article class="skill-item"><i class="devicon-couchdb-plain colored"></i><span>Couchbase</span></article>
+            <article class="skill-item"><i class="devicon-docker-plain colored"></i><span>Docker</span></article>
+            <article class="skill-item"><i class="devicon-amazonwebservices-plain" style="color: #FF9900;"></i><span>AWS</span></article>
+            <article class="skill-item"><i class="devicon-tailwindcss-original colored"></i><span>Tailwind CSS</span></article>
+            <article class="skill-item"><i class="devicon-githubactions-plain colored"></i><span>GitHub Actions</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <p class="eyebrow">Projects</p>
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-thumb" aria-hidden="true">
+                <svg viewBox="0 0 720 380" class="project-thumb-svg" role="img">
+                  <defs>
+                    <linearGradient id="thumbBg" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stop-color="rgba(110,168,254,0.32)" />
+                      <stop offset="100%" stop-color="rgba(140,107,255,0.28)" />
+                    </linearGradient>
+                  </defs>
+                  <rect x="14" y="14" width="692" height="352" rx="22" fill="rgba(8,12,24,0.75)" stroke="rgba(255,255,255,0.2)"/>
+                  <rect x="38" y="40" width="644" height="58" rx="14" fill="url(#thumbBg)"/>
+                  <rect x="58" y="58" width="160" height="18" rx="8" fill="rgba(255,255,255,0.55)"/>
+                  <rect x="540" y="58" width="120" height="18" rx="8" fill="rgba(255,255,255,0.4)"/>
+
+                  <rect x="38" y="118" width="190" height="224" rx="14" fill="rgba(255,255,255,0.06)" stroke="rgba(110,168,254,0.35)"/>
+                  <rect x="252" y="118" width="430" height="88" rx="14" fill="rgba(110,168,254,0.12)" stroke="rgba(110,168,254,0.45)"/>
+                  <rect x="272" y="138" width="190" height="14" rx="7" fill="rgba(255,255,255,0.6)"/>
+                  <rect x="272" y="162" width="290" height="12" rx="6" fill="rgba(255,255,255,0.38)"/>
+
+                  <rect x="252" y="224" width="132" height="118" rx="12" fill="rgba(140,107,255,0.12)" stroke="rgba(140,107,255,0.45)"/>
+                  <rect x="401" y="224" width="132" height="118" rx="12" fill="rgba(110,168,254,0.12)" stroke="rgba(110,168,254,0.45)"/>
+                  <rect x="550" y="224" width="132" height="118" rx="12" fill="rgba(140,107,255,0.12)" stroke="rgba(140,107,255,0.45)"/>
+                </svg>
+              </div>
+
+              <div class="project-content">
+                <div class="project-pills">
+                  <span class="project-pill">Node.js</span>
+                  <span class="project-pill">AWS</span>
+                  <span class="project-pill">Angular</span>
+                  <span class="project-pill">Couchbase</span>
+                </div>
+                <h3>D2S (Direct to Shopper)</h3>
+                <p>
+                  A configuration-driven microsite platform where entire campaigns are generated dynamically. Teams can configure
+                  splash screens, category structure, product catalogs, headers, footers, themes, and campaign start/end dates,
+                  while shoppers browse products, add items to cart, and place orders seamlessly.
+                </p>
+                <a class="btn btn-primary project-cta" href="https://arsenal.preprod.graphene-pmc.com/campaign/KsrQ7H/6e578e8e-dc4a-46cb-9edb-e47789edadf8/" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <p class="eyebrow">Contact</p>
+          <div class="contact-layout">
+            <div class="contact-visual">
+              <svg viewBox="0 0 400 400" class="contact-illustration" role="img" aria-hidden="true">
+                <defs>
+                  <linearGradient id="contactGradient" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#6ea8fe" />
+                    <stop offset="100%" stop-color="#8c6bff" />
+                  </linearGradient>
+                </defs>
+                
+                <!-- Main envelope -->
+                <g class="envelope-main">
+                  <rect x="60" y="140" width="280" height="160" rx="12" fill="rgba(110,168,254,0.12)" stroke="url(#contactGradient)" stroke-width="2"/>
+                  <path d="M 60 140 L 200 220 L 340 140" fill="none" stroke="url(#contactGradient)" stroke-width="2" stroke-linejoin="round"/>
+                  <line x1="60" y1="140" x2="200" y2="220" stroke="rgba(110,168,254,0.3)" stroke-width="1"/>
+                  <line x1="340" y1="140" x2="200" y2="220" stroke="rgba(140,107,255,0.3)" stroke-width="1"/>
+                </g>
+                
+                <!-- Floating envelope 1 -->
+                <g class="float-envelope envelope-1">
+                  <rect x="40" y="80" width="80" height="50" rx="6" fill="rgba(110,168,254,0.2)" stroke="rgba(110,168,254,0.6)" stroke-width="1.5"/>
+                  <path d="M 40 80 L 80 110 L 120 80" fill="none" stroke="rgba(110,168,254,0.6)" stroke-width="1.5" stroke-linejoin="round"/>
+                </g>
+                
+                <!-- Floating envelope 2 -->
+                <g class="float-envelope envelope-2">
+                  <rect x="280" y="120" width="80" height="50" rx="6" fill="rgba(140,107,255,0.2)" stroke="rgba(140,107,255,0.6)" stroke-width="1.5"/>
+                  <path d="M 280 120 L 320 150 L 360 120" fill="none" stroke="rgba(140,107,255,0.6)" stroke-width="1.5" stroke-linejoin="round"/>
+                </g>
+                
+                <!-- Floating envelope 3 -->
+                <g class="float-envelope envelope-3">
+                  <rect x="70" y="280" width="80" height="50" rx="6" fill="rgba(110,168,254,0.2)" stroke="rgba(110,168,254,0.6)" stroke-width="1.5"/>
+                  <path d="M 70 280 L 110 310 L 150 280" fill="none" stroke="rgba(110,168,254,0.6)" stroke-width="1.5" stroke-linejoin="round"/>
+                </g>
+                
+                <!-- Animated sending lines -->
+                <g class="send-line send-1">
+                  <line x1="200" y1="220" x2="200" y2="280" stroke="rgba(110,168,254,0.4)" stroke-width="1.5" stroke-dasharray="5" stroke-linecap="round"/>
+                  <circle cx="200" cy="280" r="4" fill="rgba(110,168,254,0.6)"/>
+                </g>
+                
+                <g class="send-line send-2">
+                  <line x1="200" y1="220" x2="260" y2="280" stroke="rgba(140,107,255,0.4)" stroke-width="1.5" stroke-dasharray="5" stroke-linecap="round"/>
+                  <circle cx="260" cy="280" r="4" fill="rgba(140,107,255,0.6)"/>
+                </g>
+                
+                <g class="send-line send-3">
+                  <line x1="200" y1="220" x2="140" y2="280" stroke="rgba(110,168,254,0.4)" stroke-width="1.5" stroke-dasharray="5" stroke-linecap="round"/>
+                  <circle cx="140" cy="280" r="4" fill="rgba(110,168,254,0.6)"/>
+                </g>
+                
+                <!-- Checkmark animation -->
+                <g class="check-mark">
+                  <circle cx="200" cy="330" r="18" fill="rgba(110,168,254,0.15)" stroke="url(#contactGradient)" stroke-width="2"/>
+                  <path d="M 195 330 L 200 335 L 210 325" fill="none" stroke="url(#contactGradient)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+              </svg>
+            </div>
+            
+            <div class="contact-wrapper">
+              <form class="contact-form" id="contact-form" data-recipient="akshatsheth2001@gmail.com">
+                <label>
+                  Name
+                  <input type="text" name="name" required />
+                </label>
+                <label>
+                  Email
+                  <input type="email" name="email" required />
+                </label>
+                <label>
+                  Project details
+                  <textarea name="message" rows="5" required></textarea>
+                </label>
+                <button class="btn btn-primary" type="submit">Send Inquiry</button>
+                <p class="form-note" id="form-note" aria-live="polite"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-wrap">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo">AS<span class="accent">.</span></a>
+          <p>Fullstack developer building scalable products from frontend to deployment.</p>
+        </div>
+
+        <div class="footer-meta">
+          <a href="#home" class="footer-top" aria-label="Back to top">↑</a>
+          <p class="footer-copy">© <span id="year"></span> Akshat Sheth. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
